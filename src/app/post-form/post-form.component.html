@@ -1,0 +1,8 @@
+<div class="my-form">
+    <input type="text" #inpTitle class="form-control" [(ngModel)]="title" placeholder="Enter title">
+    <input type="text" class="form-control" [(ngModel)]="text" placeholder="Enter text">
+
+    <button class="btn btn-secondary" (click)="addPost()">Создать пост</button>
+    <hr>
+    <button class="btn btn-outline" (click)="focusTitle(inpTitle)">Focus on title</button>
+</div>

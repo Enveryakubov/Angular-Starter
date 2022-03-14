@@ -1,0 +1,10 @@
+<div class="card p-3 m-3">
+    <h2>{{post?.title}}</h2>
+    <p>{{post?.text}}</p>
+
+    <ng-content></ng-content>
+    <button  
+    class="btn btn-warning btn-sm"
+    (click)="removePost()"
+    >Удалить пост</button>
+</div>
